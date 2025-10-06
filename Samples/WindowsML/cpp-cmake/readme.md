@@ -37,7 +37,7 @@ for an arm64 cross-compiling prompt on an x64 OS.
 In order to build a given preset, simply run the CMake 'configuration' step:
 
 ```powershell
-cmake --preset <preset name>
+cmake --preset windows-vs-x64
 ```
 
 Followed by the CMake 'build' step:
