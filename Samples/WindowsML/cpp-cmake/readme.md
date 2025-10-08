@@ -43,5 +43,5 @@ cmake --preset windows-vs-x64
 Followed by the CMake 'build' step:
 
 ```powershell
-cmake --build --preset <preset name>
+cmake --build --preset windows-vs-x64
 ```
