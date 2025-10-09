@@ -46,17 +46,6 @@ find_package(Microsoft.Windows.ImplementationLibrary CONFIG REQUIRED)
 find_package(Microsoft.WindowsAppSDK.Runtime CONFIG REQUIRED)
 find_package(Microsoft.WindowsAppSDK.ML CONFIG REQUIRED)
 
-set(RESNET_MODEL_FILES
-    ${CMAKE_SOURCE_DIR}/../Resources/ResNet50/model.Labels.txt
-    ${CMAKE_SOURCE_DIR}/../Resources/ResNet50/model.LICENSE.txt
-    ${CMAKE_SOURCE_DIR}/../Resources/ResNet50/model.onnx
-    ${CMAKE_SOURCE_DIR}/../Resources/ResNet50/model.onnx.data
-)
-
-set(RESOURCE_FILES
-    ${CMAKE_SOURCE_DIR}/../Resources/image.jpg
-)
-
 macro(post_build_runtime_dll_copy target_name)
     if(WIN32)
         add_custom_command(TARGET ${target_name} POST_BUILD
